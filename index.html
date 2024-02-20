@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style/style.css" />
+
+  <link rel="icon" href="img/brand.png" type="image/x-icon" />
+
+  <title>Target</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+  <div class="top-nav" id="sequenciafibonacci">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-auto">
+          <p><i class="bx bxs-envelope"></i> Lara Lima Pereira</p>
+          <p><i class="bx bxs-phone-call"></i> 31 97226-7362</p>
+        </div>
+        <div class="col-auto social-icons">
+          <a href="mailto:laralima.dev@gmail.com?subject=Contratação"><i class="bi bi-envelope-fill"></i></a>
+          <a href="https://www.linkedin.com/in/lara-lima-pereira-b41585205/"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/Lara-Lima"><i class="bi bi-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container">
+      <img src="img/brand.png" alt="" style="width: 8rem" />
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#ex_1">Exercício 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ex_2"> Exercício 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ex_3"> Exercício 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ex_4">Exercício 4</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="ex_1" class="bg-blueDark ex1_ex2">
+    <h6 class="text-white text-uppercase">
+      Exercício 1) Sequência de Fibonacci
+    </h6>
+    <h1 class="text-white text-center">
+      Descubre se o número pertence a sequência de Fibonacci
+    </h1>
+    <div class="input-group m-3 " style="width: 300px;">
+      <input type="number" id="inputNumFibonacci" class="form-control bg-white" placeholder="Digite um número" aria-label="Example text with button addon" aria-describedby="button-addon1">
+      <button class="btn btn-secondary" type="button" id="pesquisarNumFibonacci">Pesquisar</button>
+    </div>
+    <div id="resultado" class="text-center text-white"></div>
+  </div>
+
+  <section id="ex_2" class="container">
+    <h5>Exercício 2) faturamento diário</h5>
+    <div  class="ex_2">
+        <div>
+              <div class="table-css">
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th class="position-stick" scope="col">Dia</th>
+                              <th  class="position-stick scope="col">Valor</th>
+                          </tr>
+                      </thead>
+                      <tbody class="table-group-divider" id="tabela-dados">
+                      </tbody>
+                  </table>
+              </div>
+        </div>
+        <div>
+            <p>
+              <i class="bi bi-arrow-down-circle-fill"></i> O menor valor de faturamento ocorrido em um dia do mês foi de <b id="menor-valor">R$ 0,00</b> ;
+            </p>
+            <p>
+              <i class="bi bi-arrow-up-circle-fill"></i> O maior valor de faturamento ocorrido em um dia do mês foi de <b id="maior-valor">R$ 0,00</b> ;
+            </p>
+            <p>
+              <i class="bi bi-cash"></i> Número de dias no mês em que o valor de faturamento diário foi superior à média mensal foi de <b id="dias-acima-media">2</b>.
+            </p>
+             <small>  <i class="bi bi-info-circle"></i> Os dias sem faturamento, como nos finais de semana e feriados, foram ignorados dos cálculos.
+            </small>
+        <div>
+    <div>
+  </section>
+
+
+  <section id="ex_3" class="bg-blueDark" >
+    <div class="container">
+        <h6 class="text-white text-uppercase text-center">
+            Exercício 3) Faturamento Mensal por Estado
+           </h6>
+     <div class="ex_3">
+     </div>
+    </div>
+  </section>
+
+  <section  id="ex_4" class="ex1_ex2">
+      <h6 class=" text-uppercase">
+            Exercício 4) Inverter Palavra
+           </h6>
+           <h1 class=" text-center">
+            Digite uma palavra e veja a mágica acontecer
+           </h1>
+           <div class="input-group m-3 " style="width: 300px;">
+               <input type="text" id="inputStringInverter" class="form-control bg-white" placeholder="Digite um número" aria-label="Example text with button addon" aria-describedby="button-addon1">
+               <button class="btn btn-secondary" type="button" id="inverterString">Inverter</button>
+           </div>
+           <div id="resultadoStringInvertida" class="text-center "></div>
+  </section>
+
+  <footer>
+    <div class="footer-top text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <p>
+              Estou entusiasmada com a possibilidade de fazer parte da equipe como estagiária. Vejo isso como uma oportunidade valiosa para enriquecer meu conhecimento e experiência, enquanto contribuo ativamente para os objetivos da empresa. 
+            </p>
+            <div class="col-auto social-icons">
+
+              <a href="mailto:laralima.dev@gmail.com?subject=Contratação"><i class="bi bi-envelope-fill"></i></a>
+              <a href="https://www.linkedin.com/in/lara-lima-pereira-b41585205/"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/Lara-Lima"><i class="bi bi-github"></i></a>
+         
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p class="mb-0">Copyright@2023. Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <script src="scripts/exercicio1.js" type="module"></script>
+  <script src="scripts/exercicio2.js" type="module"></script>
+  <script src="scripts/exercicio3.js" type="module"></script>
+  <script src="scripts/exercicio4.js" type="module"></script>
+
+</body>
+
+</html>
