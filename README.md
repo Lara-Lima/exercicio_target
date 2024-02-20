@@ -1,6 +1,15 @@
 # Exercícios Target System
 
-![aplicação-target](./img/a.gif)
+
+<p align="center">
+   <img alt="Exercícios Target" src="./img/a.gif">
+</p>
+
+<p align="center">
+  <a href="https://exercicio-target.vercel.app/" target="_blank">
+    <img alt="Exercícios Target" src="https://svgshare.com/i/MKt.svg">
+  </a>
+</p>
 
 ## 💻 Sobre a aplicação
 
